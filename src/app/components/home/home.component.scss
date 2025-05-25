@@ -121,3 +121,18 @@ main {
         font-size: 60px;
     }
 }
+
+.footer {
+    display: flex;
+    //flex-direction: row-reverse; // Inverte a ordem dos filhos
+    justify-content: space-between; // Espaça ao máximo os dois elementos
+    //align-items: center;
+    padding: 1rem 2rem; // Exemplo de espaçamento
+  }
+  
+  .footer-logo,
+  .footer-social-media {
+    display: flex;
+    align-items: center;
+    //gap: 1rem; // Espaço entre os ícones sociais, por exemplo
+  }
