@@ -1,0 +1,3 @@
+interface NewsletterResponse{
+    mensage: string
+}
