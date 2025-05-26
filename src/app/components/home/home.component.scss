@@ -5,6 +5,11 @@ main {
     flex-direction: column;
     gap: 40px;
     margin-top: 20px;
+
+    background-color: rgba(163, 155, 160, 0.5);; // fundo branco
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // sombra suave
+    border-radius: 8px; // opcional: bordas arredondadas
+    padding: 1rem; // espaçamento interno
 }
 
 .main-section {
