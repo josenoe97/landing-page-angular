@@ -1,16 +1,35 @@
-.benefit-section {
-    display: flex;            /* Alinha filhos lado a lado */
-    gap: 5rem;                /* Espaçamento entre os blocos */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: flex-start;  /* Alinha pelo topo */
-    padding: 70px;            /* Se "pad-70" for uma classe, substitua ou defina ela corretamente */
-  }
-  
-  .benefits-left,
-  .benefits-right {
-    width: 588px;             /* Um valor consistente */
+@import "../../../color-variables.scss";
+
+.benefit-card {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 1rem;
-  }
-  
+    max-width: 100%;
+
+    h5 {
+       font-size: 24px;
+       font-weight: 600;
+       margin: 0;
+       color: $primary-text;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $secondary-text;
+    }
+}
+
+@media (min-width: 768px) {
+    .benefit-card {
+        max-width: 600px;
+
+        h5 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
